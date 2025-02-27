@@ -9,7 +9,7 @@ body {
 
 .svg-container {
     position: absolute;
-    left: 340px;
+    left: 260px;
     top: 160px;
     width: 569.5px;
     height: 290px;
@@ -17,13 +17,10 @@ body {
     z-index: -1;
 }
 
-/* SVG image styling */
 .svg-container img {
     width: 100%;
-    /* Ensure the image fits the container */
     height: 100%;
     object-fit: cover;
-    /* Maintain aspect ratio */
 }
 
 .main-content {
@@ -32,8 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    top: 112px;
-    padding-top: 112px;
+    padding-top: 32px;
 }
 
 .container {
@@ -41,7 +37,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0px; /* might be 96px later */
+    gap: 0px;
+    /* might be 96px later */
 }
 
 .description {
@@ -110,6 +107,77 @@ body {
     text-align: center;
     height: 11px;
 }
+
+/* Code Canvas prev. by Seen Design Lab  */
+.seen-codecanvas {
+    display: flex;
+    height: 253px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid var(--root-stroke, #F3F3F3);
+    border: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+    background: var(--trans-wh-8, rgba(255, 255, 255, 0.08));
+    background: var(--trans-wh-8, color(display-p3 1 1 1 / 0.08));
+
+    /* outline-md-none */
+    box-shadow: 0px 0px 0px 16px #FFF;
+    box-shadow: 0px 0px 0px 16px color(display-p3 1 1 1);
+    backdrop-filter: blur(12px);
+}
+
+.tab-bar {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid var(--root-stroke, #F3F3F3);
+    border-bottom: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+    background: var(--trans-wh-40, rgba(255, 255, 255, 0.40));
+    background: var(--trans-wh-40, color(display-p3 1 1 1 / 0.40));
+}
+
+.mac-tab {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 4px;
+    border-right: 1px solid var(--root-stroke, #F3F3F3);
+    border-right: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+}
+
+.mac-tab .mac-tab-button {
+    width: 8px;
+    height: 8px;
+    aspect-ratio: 1/1;
+    background: var(--trans-black-20, rgba(13, 14, 36, 0.20));
+    background: var(--trans-black-20, color(display-p3 0.051 0.0549 0.1333 / 0.20));
+    border-radius: 24px;
+}
+
+.mac-tab .red {
+    /* background: #f13c3c; */
+}
+
+.mac-tab .yellow {
+    /* background: #f1ca3c; */
+}
+
+.mac-tab .green {
+    /* background: #17d530; */
+}
+
+.tab {
+    display: flex;
+    padding: 14px 16px;
+    align-items: center;
+    gap: 6px;
+    border-right: 1px solid var(--root-stroke, #F3F3F3);
+    border-right: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+}
+
+
+
 
 /* nav */
 nav {
