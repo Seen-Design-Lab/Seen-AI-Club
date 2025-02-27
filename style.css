@@ -135,6 +135,7 @@ body {
     border-bottom: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
     background: var(--trans-wh-40, rgba(255, 255, 255, 0.40));
     background: var(--trans-wh-40, color(display-p3 1 1 1 / 0.40));
+    font-family: var(--body);
 }
 
 .mac-tab {
@@ -185,8 +186,22 @@ body {
     background: var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
 }
 
-.tab .add-tab{
-color: var(--trans-black-20);
+.tab-label {
+    color: var(--trans-black-20, rgba(13, 14, 36, 0.20));
+    color: var(--trans-black-20, color(display-p3 0.051 0.0549 0.1333 / 0.20));
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'SF Pro' Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 15.4px */
+    text-transform: capitalize;
+}
+
+.tab .add-tab {
+    color: var(--trans-black-20);
 }
 
 
