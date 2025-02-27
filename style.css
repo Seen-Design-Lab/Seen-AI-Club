@@ -178,12 +178,20 @@ body {
 }
 
 .tabicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 12px;
     height: 12px;
     aspect-ratio: 1/1;
     border-radius: 3px;
     background: var(--root-stroke, #F3F3F3);
     background: var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+}
+
+.tabicon .ph{
+    font-size: 9px;
+    display: none;
 }
 
 .tab-label {
