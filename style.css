@@ -1,0 +1,68 @@
+body{
+    background-image: url(public/images/hero-bg-graphics.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content{
+    display: flex;
+    width: 1120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+
+/* nav */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #007BFF;
+}
+
+.quick-nav ul {
+    display: none;
+    margin-top: 10px;
+}
+
+.quick-nav:hover ul {
+    display: block;
+}
+
+.quick-nav ul li {
+    display: block;
+    margin: 5px 0;
+}
+
+.sub-list {
+    margin-left: 20px;
+}
