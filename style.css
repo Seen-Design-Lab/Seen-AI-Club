@@ -176,6 +176,19 @@ body {
     border-right: 1px solid var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
 }
 
+.tabicon {
+    width: 12px;
+    height: 12px;
+    aspect-ratio: 1/1;
+    border-radius: 3px;
+    background: var(--root-stroke, #F3F3F3);
+    background: var(--root-stroke, color(display-p3 0.9516 0.9516 0.9516));
+}
+
+.tab .add-tab{
+color: var(--trans-black-20);
+}
+
 
 
 
