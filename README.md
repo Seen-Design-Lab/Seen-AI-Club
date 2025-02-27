@@ -1,2 +1,1 @@
 # Seen AI Club
- 
