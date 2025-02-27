@@ -1,0 +1,33 @@
+:root {
+
+    /* ======== Fonts Token ======== */
+    /* ––––– Change the font name here to make changes into the entire project ––––– */
+
+    --bricolagegrotesque: "Bricolage Grotesque";
+    --sfpro: "SF Pro";
+
+
+    /* ==== Font Family ==== */
+    /* ––––– Here just defined the process of ** Font Family** ––––– */
+
+    --heading: var(--bricolagegrotesque);
+    --body: var(--sfpro);
+
+    /* ==== Colors ==== */
+    /* ––––– Root Color Palettes ––––– */
+
+    --root-blue: #38A0FF;
+    --root-pink: #F093FF;
+    --root-orange: #FF9D0B;
+    --root-stroke: #F2F2F2;
+    --root-light: #FFFFFF;
+
+    /* transparent == white */
+    --trans-wh-8: #FFFFFF14;
+    --trans-wh-40: #FFFFFF66;
+
+    /* transparent == black */
+    --trans-black-20: #0D0E2233;
+    --black: #000000;
+    --trans-black-40: #0D0E2266;
+}
