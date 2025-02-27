@@ -10,15 +10,11 @@ body {
 .svg-container {
     position: absolute;
     left: 340px;
-    /* Horizontal position from the left */
     top: 160px;
-    /* Vertical position from the top */
     width: 569.5px;
-    /* SVG width */
     height: 290px;
-    /* SVG height */
     flex-shrink: 0;
-    /* Prevent shrinking */
+    z-index: -1;
 }
 
 /* SVG image styling */
