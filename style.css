@@ -1,3 +1,5 @@
+@import url(./public/asset/css/root.css);
+
 body{
     background-image: url(public/images/hero-bg-graphics.svg);
     background-repeat: no-repeat;
@@ -32,8 +34,8 @@ body{
     gap: 16px;
 }
 .stat-value{
-    mix-blend-mode: exclusion;
-    color: var(--root-pink, color(display-p3 0.9412 0.5765 1));
+    /* mix-blend-mode: exclusion; */
+color: var(--root-blue);
     font-family: Bricolage Grotesque;
     font-size: 116px;
     font-style: normal;
@@ -43,7 +45,22 @@ body{
     leading-trim: both;
     text-edge: cap;
 }
-
+.stat-label-container{
+    display: flex;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.stat-label-container span{
+    color: var(--Black, color(display-p3 0 0 0));
+    font-family: var(--body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+}
 
 /* nav */
 nav {
