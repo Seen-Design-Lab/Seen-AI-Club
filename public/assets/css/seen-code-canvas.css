@@ -1,0 +1,44 @@
+#canvas {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+}
+
+pre {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Comment styling */
+.comment {
+    color: gray;
+}
+
+/* Keyword styling */
+.keyword {
+    color: purple;
+}
+
+/* Built-in function or library styling */
+.builtin {
+    color: red;
+}
+
+/* String styling */
+.string {
+    color: green;
+}
+
+/* Function or method styling */
+.function {
+    color: orange;
+}
+
+/* Variable or identifier styling */
+.variable {
+    color: cyan;
+}

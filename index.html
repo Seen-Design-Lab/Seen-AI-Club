@@ -39,6 +39,7 @@
         <!-- style sheets -->
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="./public/assets/css/root.css">
+        <link rel="stylesheet" href="./public/assets/css/seen-code-canvas.css">
         <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     </head>
 
@@ -99,65 +100,94 @@
                         <i class="ph ph-plus add-tab"></i>
                     </div>
                 </div>
-                <div class="code-container">
-                    <p>this is code box...</p>
+                <pre class="code-container">
+                    <span class="comment">## Import necessary libraries</span>
+                    <span class="keyword">import</span> <span class="builtin">tensorflow</span> <span
+                        class="keyword">as</span> tf
+                    <span class="keyword">from</span> <span class="builtin">tensorflow.keras</span> <span
+                        class="keyword">import</span>
+                    layers, models
+                    <span class="keyword">from</span> <span class="builtin">tensorflow.keras.datasets</span> <span
+                        class="keyword">import</span> mnist
+                    <span class="keyword">from</span> <span class="builtin">tensorflow.keras.utils</span> <span
+                        class="keyword">import</span> to_categorical
+
+                    <span class="comment"># Load and preprocess data</span>
+                    <span class="keyword">def</span> <span class="function">load_and_preprocess_data</span>():
+                    <span class="comment">"""Load and preprocess the MNIST dataset."""</span>
+                    <span class="variable">(x_train, y_train)</span>, <span class="variable">(x_test, y_test)</span> =
+                    mnist.<span class="function">load_data</span>()
+
+                    <span class="comment"># Normalize the images to [0, 1] range</span>
+                    x_train = x_train.<span class="function">astype</span>(<span class="string">'float32'</span>) /
+                    255.0
+                    x_test = x_test.<span class="function">astype</span>(<span class="string">'float32'</span>) / 255.0
+
+                    <span class="comment"># Reshape data to include channel dimension</span>
+                    x_train = x_train.<span class="function">reshape</span>(-1, 28, 28, 1)
+                    x_test = x_test.<span class="function">reshape</span>(-1, 28, 28, 1)
+
+                    <span class="comment"># One-hot encode the labels</span>
+                    y_train = to_categorical(y_train, 10)
+                    y_test = to_categorical(y_test, 10)
+
+                    <span class="keyword">return</span> (x_train, y_train), (x_test, y_test)
+                </pre>
+            </div>
+
+            <!-- Site Header -->
+            <div class="fixed-header">
+                <div class="logo">
+                    <img src="./public/icons/seen-logo.svg" alt="Seen AI Club Logo">
+                    <span class="logo-name">Seen AI Club</span>
                 </div>
+                <nav>
+                    <ul>
+                        <li><a href="README.md">README.md</a></li>
+                        <li><a href="License">License</a></li>
+                        <li class="quick-nav">
+                            <a href="#">Quick Nav</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Open Source</a>
+                                    <ul class="sub-list">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                        <li><a href="#">Item 5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Div-1</a>
+                                    <ul class="sub-list">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                        <li><a href="#">Item 5</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Div-2</a>
+                                    <ul class="sub-list">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                        <li><a href="#">Item 5</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
 
-        <!-- Site Header -->
-        <div class="fixed-header">
-            <div class="logo">
-                <img src="./public/icons/seen-logo.svg" alt="Seen AI Club Logo">
-                <span class="logo-name">Seen AI Club</span>
+            <!-- content BG Graphics -->
+            <div class="svg-container">
+                <img src="./public/resources/images/gradient-blur.svg" alt="Gradient Blur Background">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="README.md">README.md</a></li>
-                    <li><a href="License">License</a></li>
-                    <li class="quick-nav">
-                        <a href="#">Quick Nav</a>
-                        <ul>
-                            <li>
-                                <a href="#">Open Source</a>
-                                <ul class="sub-list">
-                                    <li><a href="#">Item 1</a></li>
-                                    <li><a href="#">Item 2</a></li>
-                                    <li><a href="#">Item 3</a></li>
-                                    <li><a href="#">Item 4</a></li>
-                                    <li><a href="#">Item 5</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Div-1</a>
-                                <ul class="sub-list">
-                                    <li><a href="#">Item 1</a></li>
-                                    <li><a href="#">Item 2</a></li>
-                                    <li><a href="#">Item 3</a></li>
-                                    <li><a href="#">Item 4</a></li>
-                                    <li><a href="#">Item 5</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Div-2</a>
-                                <ul class="sub-list">
-                                    <li><a href="#">Item 1</a></li>
-                                    <li><a href="#">Item 2</a></li>
-                                    <li><a href="#">Item 3</a></li>
-                                    <li><a href="#">Item 4</a></li>
-                                    <li><a href="#">Item 5</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- content BG Graphics -->
-        <div class="svg-container">
-            <img src="./public/resources/images/gradient-blur.svg" alt="Gradient Blur Background">
-        </div>
     </body>
 
 </html>
